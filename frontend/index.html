@@ -40,7 +40,6 @@
             <table style="margin: auto">
               <tr>
                 <td class="td_left"><label for="day">Day of the week</label></td>
-                <!-- <td class="td_right"><input type="text" name="day" id="day" placeholder="Day of the week"></td> -->
                 <td class="td_right">
                   <select name="day" id="day" style="width: 208px">
                     <option value="1">Monday</option>
@@ -55,7 +54,6 @@
               </tr>
               <tr>
                 <td class="td_left"><label for="depblock">Departure block</label></td>
-                <!-- <td class="td_right"><input type="text" name="depblock" id="depblock" placeholder="Departure block"></td> -->
                 <td class="td_right">
                   <select name="depblock" id="depblock" style="width: 208px">
                     <option value="EARLY_MORNING">Early Morning</option>
@@ -96,14 +94,16 @@
   <footer class="footer footer-default">
     <div class="container">
       <div class="copyright float-left" align="left">
-        Junjian Chen, Zhekai Jiang, Xichong Ling, Shichang Zhang
+        Created by Junjian Chen, Zhekai Jiang, Xichong Ling, and Shichang Zhang
         <br/>
-        MAIS Hacks 2021
+        Best AI for Commerce (Stonks) Winner, MAIS Hacks 2021, McGill Artificial Intelligence Society
+        <br/>
+        <a href="https://github.com/zhekai-jiang/alheure">GitHub Repository</a> | <a href="https://devpost.com/software/smart-delay">Devpost Presentation</a>
       </div>
       <div class="copyright float-right" align="right">
         Training dataset by Jen Wadkins on <a href="https://www.kaggle.com/threnjen/2019-airline-delays-and-cancellations?select=train_test_small.csv">Kaggle</a>
         <br/>
-        Template by <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a>
+        Frontend template by <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a>
         <br/>
         Background image by Anugrah Lohiya on <a href="https://www.pexels.com/photo/photography-of-airplane-during-sunrise-723240/">Pexels</a>
       </div>
@@ -126,6 +126,7 @@
 </script>
 <script>
   function goPython(){
+    document.getElementById("result").innerHTML = "One moment while we connect to the backend server..."
     day = document.getElementById('day').value
     depblock = document.getElementById('depblock').value
     carrier = document.getElementById('carrier').value
@@ -168,16 +169,13 @@
 
     }
 
-
     .rg_center{
         float: center;
-       /* border: 1px solid red;*/
         padding-left: 100px;
         padding-right: 100px;
     }
 
     .rg_right{
-        /*border: 1px solid red;*/
         float: right;
         margin: 15px;
     }
