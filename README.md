@@ -1,6 +1,6 @@
 # À l'heure
-**MAIS Hacks 2021**   
-Predict whether a flight will be on time or delayed.
+**Best AI for Commerce (Stonks) Winner at MAIS Hacks 2021 hosted by McGill Artificial Intelligence Society**   
+This application helps the user predict whether a flight will be on time or delayed.
 
 ## Try it out
 * [Application](https://cs.mcgill.ca/~zjiang27/projects/alheure)
